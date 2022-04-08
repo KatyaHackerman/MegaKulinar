@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(156, 208, 233);
+}
+button {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: hsl(193, 86%, 17%);
+    text-shadow: rgba(255,255,255,.5) 0 -1px 0, rgba(0,0,0,.2) 0 .18em .15em;
+    text-decoration: none;
+    user-select: none;
+    margin: .5em;
+    padding: .5em .6em .4em .6em;
+    border-radius: 8px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    outline: none;
+    background: #659ddd radial-gradient(rgba(255,255,255,0), rgba(255,255,255,.5));
+    box-shadow:
+     inset rgba(255,255,255,.6) 0 .3em .3em,
+     inset rgba(0,0,0,.2) 0 -.1em .3em,
+     rgb(128,161,103) 0 7px 1px,
+     rgba(0,0,0,.2) 0 .5em 5px;
+    transition: .2s ease-in-out;
+  }
+  button:hover {
+    background-color: hsl(187, 72%, 53%);
+  }
+ button:active {
+    top: .2em;
+    color: rgba(254,255,255,.9);
+    text-shadow: rgba(0,0,0,.2) 0 1px 2px;
+    box-shadow:
+     inset rgba(255,255,255,.6) 0 .3em .3em,
+     inset rgba(0,0,0,.2) 0 -.1em .3em,
+     rgba(0,0,0,.4) 0 .1em 1px,
+     rgba(0,0,0,.3) 0 .2em 6px;
+  }
+  button:after {
+    content:  "";
+    position:  absolute; 
+    width:   90%;
+    height:  60%;
+    top:   0;
+    left:   5%;    
+    border-radius:    .5em .5em 1em 1em / .5em .5em 2em 2em;
+    background-image: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.3)); 
+  }
+  button:active:after {
+    opacity: .6;
+  }

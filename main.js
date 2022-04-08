@@ -10,7 +10,8 @@ function addRecipe(){
   recipe.appendChild(nameRecipe);
   recipe.appendChild(buttonThatAddsAnIngredientRecipe);
   recipe.classList.add('recipecss');
-  document.body.appendChild(recipe);
+  let menu = document.getElementById("para1");
+  menu.before(recipe);
 }
 function count(){
     console.log("кнопка подсчет нажата");
